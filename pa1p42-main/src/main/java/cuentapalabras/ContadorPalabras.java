@@ -32,7 +32,7 @@ public class ContadorPalabras {
     }
 
     protected void incluye(String pal) {
-        if (pal!=null) {
+        if (!pal.isEmpty()) {
             int index = esta(pal);
             if (index != -1) {
                 palabras.get(index).incrementa();
